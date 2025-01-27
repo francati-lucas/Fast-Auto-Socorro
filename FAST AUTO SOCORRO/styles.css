@@ -1,0 +1,328 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%; /* Garante que o corpo e o html não ultrapassem a largura da tela */
+    overflow-x: hidden; /* Oculta qualquer overflow horizontal */
+}
+
+.hero-banner {
+    background: url('imagens/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+    position: relative;
+    width: 100%;
+    padding-left: 350px; /* Espaço à esquerda para evitar colar na borda */
+}
+
+.hero-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(17, 17, 17, 0.85); /* Cor cinza com 85% de transparência */
+    z-index: 1;
+}
+
+.content {
+    z-index: 2;
+    text-align: left; /* Alinha o texto à esquerda */
+    padding: 20px;
+    color: white;
+    max-width: 600px; /* Largura máxima para manter os elementos alinhados */
+    padding-bottom: 40px; /* Aumenta espaço no fundo */
+}
+.logo, h1, p, .buttons {
+    width: 100%; /* Esses elementos agora utilizam a totalidade da largura do contêiner .content */
+}
+
+.logo {
+    max-width: 350px;
+    margin-bottom: 15px;
+    
+}
+
+h1 {
+    font-size: 2.7em;
+    margin: 0px 0;
+    color: white;
+}
+
+h1 span { /* Cor laranja para "auto socorro" */
+    color: #F58634;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 45px;
+    font-weight: 100; /* Define o peso da fonte como regular */
+    color: #FFFFFF; /* Ajuste se necessário para melhorar a legibilidade */    
+}
+
+p span { /* Cor laranja para "Fast Auto Socorro" */
+    color: #F58634;
+}
+
+.buttons .btn {
+    text-decoration: none;
+    color: white;
+    background-color: #F58634; /* Cor laranja */
+    padding: 15px 25px;
+    border-radius: 30px;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.additional-section .section-content {
+    display: flex;
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    padding: 150px 20px;
+    background-color: #f8f8f8;
+}
+
+.section-image {
+    max-width: 35%; /* Diminui a largura máxima da imagem */
+    flex: 0 0 35%; /* Define que a imagem não deve crescer ou encolher além de 35% */
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.text-content {
+    flex: 1; /* Continua permitindo que o conteúdo de texto cresça conforme necessário */
+    max-width: 600px; /* Define a largura máxima para ser igual à do banner */
+    padding: 0 10px; /* Mantém o padding para o espaçamento interno */
+    
+}
+
+h2 {
+    font-size: 2.7em;
+    color: #333; /* Cor escura para o título para contraste com o fundo claro */
+    margin: 20px 0; /* Espaço acima e abaixo do título */
+}
+h2, .additional-section p, .section-btn {
+    margin-bottom: 20px; /* Espaçamento entre elementos */
+}
+h2 span { /* Cor laranja para "auto socorro" */
+    color: #F58634;
+}
+
+
+.additional-section p {
+    color: #666; /* Cor mais suave para o texto */
+    font-size: 1.5em; /* Tamanho maior para legibilidade */
+    margin-bottom: 30px; /* Espaço abaixo do parágrafo */
+}
+.baterias span {
+        color: #F58634;
+}
+
+.section-btn {
+    text-decoration: none;
+    color: white;
+    background-color: #F58634; /* Cor laranja */
+    padding: 15px 25px;
+    border-radius: 30px;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+.section-btn:hover {
+    background-color: #5d3301; /* Cor mais escura no hover */
+}
+.services-section {
+    background: url('imagens/HERO.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: auto; /* Mudar para auto para acomodar o conteúdo dinamicamente */
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Isso coloca o título acima dos grids */
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 50px 0; /* Adicionar padding para espaçamento interno */
+}
+
+.services-section h2 {
+    font-size: 3em; /* Tamanho do título */
+    font-weight: 700; /* Peso da fonte */
+    color: #F58634; /* Cor laranja para o título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas de largura igual */
+    grid-gap: 20px; /* Espaço entre as células da grade */
+    width: 50%; /* Reduzir a largura para melhor visualização */
+    margin: 0 auto; /* Centralizar grid na seção */
+}
+
+.service-item {
+    background: rgba(255, 255, 255, 0.1); /* Fundo leve para melhor visualização */
+    padding: 20px;
+    border-radius: 10px; /* Borda arredondada para os cartões */
+    color: white; /* Cor branca para o texto */
+}
+
+.service-item h3 {
+    color: #FFD700; /* Cor para os títulos dos serviços */
+    margin-bottom: 10px; /* Espaço abaixo do título do serviço */
+    font-size: 1.5em;
+}
+
+
+.service-item p {
+    font-size: 1em; /* Tamanho do texto ajustado */
+}
+
+.services-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.85); /* Cor preta com 85% de transparência */
+    z-index: -1; /* Torna negativo para garantir que esteja abaixo do conteúdo */
+}
+.services-section {
+    z-index: 1; /* Assegura que o conteúdo fique acima da camada preta */
+    color: white;
+    text-align: center;
+    width: 100%; /* Assegura que o conteúdo utilize a largura total da seção */
+    padding-top: 50px; /* Aumenta o espaço no topo */
+}
+
+.services-section h2 {
+    font-size: 3em; /* Tamanho do título */
+    font-weight: 700; /* Peso da fonte */
+    padding: 20px; /* Padding para evitar que o texto toque nas bordas */
+}
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas de largura igual */
+    grid-gap: 20px; /* Espaço entre as células da grade */
+    padding: 20px; /* Espaço interno */
+    margin-top: 20px; /* Espaço após o título principal */
+}
+
+.service-item {
+    background: rgba(255, 255, 255, 0.1); /* Fundo leve para melhor visualização */
+    padding: 15px;
+    border-radius: 10px; /* Borda arredondada para os cartões */
+}
+
+.service-item h3 {
+    color: #F58634; /* Cor para os títulos dos serviços */
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1em; /* Tamanho do texto ajustado */
+    color: #FFF; /* Texto branco para contraste */
+}
+.service-btn {
+    text-decoration: none;
+    color: white;
+    background-color: #F58634; /* Cor laranja */
+    padding: 15px 25px;
+    border-radius: 30px;
+    margin: 5px;
+    transition: background-color 0.3s;
+    
+    text-align: center; /* Centraliza o texto dentro do botão */
+}
+
+.service-btn:hover {
+    background-color: #cc5200; /* Laranja mais escuro no hover */
+}
+#somos-section{
+    text-align: center;
+    color: #F58634;
+    margin-top: 80px;
+}
+#p-somos{
+    text-align: center;
+    color: #666;
+    flex: 1; /* Continua permitindo que o conteúdo de texto cresça conforme necessário */
+    max-width: 1000px; /* Define a largura máxima para ser igual à do banner */
+    margin: 0 auto;
+    padding: 20px; /* Opcional: Adiciona um padding para melhor legibilidade */
+    margin-bottom: 140px;
+    margin-top: 30px;
+    
+}
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px;
+    background-color: white;
+    color: #F58634;
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-bottom: 30px;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1; /* Distribui o espaço igualmente */
+    padding: 10px;
+}
+.footer-left{
+    margin-top: 30px;
+}
+
+.footer-logo {
+    max-width: 200px; /* Tamanho do logo */
+    display: block; /* Garante que o logo seja um bloco para o botão ficar abaixo */
+    margin-bottom: 10px; /* Espaço entre o logo e o botão */
+}
+
+.footer-button {
+    padding: 15px 25px;
+    border-radius: 30px;
+    background-color: #F58634; /* Cor laranja para combinar com o design */
+    border: none;
+    color: white;
+    cursor: pointer; /* Mãozinha ao passar o mouse */
+}
+
+.footer-center h3, .footer-right h3 {
+    margin-bottom: 5px; /* Espaço abaixo do título */
+    font-size: 1.5em;
+}
+
+.footer-center ul, .footer-right ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+}
+
+.footer-center ul li, .footer-right ul li {
+    margin-bottom: 5px; /* Espaço entre os itens */
+}
+
+.footer-center ul li a, .footer-right ul li {
+    color: #666; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.footer-center ul li a:hover, .footer-right ul li:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+.copyright {
+    font-size: 12px; /* Tamanho menor para o texto de direitos autorais */
+    color: #888; /* Cor mais suave para não competir com outros elementos do footer */
+    text-align: center; /* Centraliza o texto */
+    padding-top: 10px; /* Espaço acima para separar do resto do conteúdo do footer */
+    margin-bottom: 15px;
+}

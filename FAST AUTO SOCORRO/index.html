@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Auto Socorro</title>
+    <link rel="icon" href="imagens/favicon.ico" type="image/x-icon"> <!-- Ícone ICO -->
+    <link rel="icon" href="imagens/icone.png" type="image/png"> <!-- Ícone PNG -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+
+    <div class="hero-banner" id="home">
+        <div class="content">
+            <img src="imagens/logo-banner.png" alt="Logo Fast Auto Socorro" class="logo">
+            <h1>ATENDIMENTO DE <span>AUTO SOCORRO</span> 24h</h1>
+            <p>Na <span>Fast Auto Socorro</span>, estamos prontos para atender suas emergências veiculares 24 horas por dia. Com uma ampla gama de serviços, incluindo socorro mecânico, guincho, venda de baterias e atendimento a domicílio, garantimos uma resposta rápida e profissional. Atendemos em Campinas e região.</p>
+            <div class="buttons">
+                <a href="https://api.whatsapp.com/send?phone=5519971039698&text=Olá Fast Auto Socorro, gostaria de mais informações!" target="_blank"  class="btn whatsapp">Chame no WhatsApp <i class="fab fa-whatsapp"></i></a>
+                <a href="tel:+5519971039698" target="_blank" class="btn call">Ligue agora mesmo! <i class="fas fa-phone-alt"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="additional-section" id="baterias">
+        <div class="section-content">
+            <img src="imagens/BANNER-BATERIA 1.png" alt="Baterias para Veículos" class="section-image">
+            <div class="text-content">
+                <h2>Baterias para o Seu Veículo com <span>Qualidade Garantida!</span></h2>
+                <p class="baterias">Trabalhamos com as melhores marcas: Moura, Bosch e Eliar. <span>Garantia, entrega rápida e instalação à domicílio!</span></p>
+                <a href="https://api.whatsapp.com/send?phone=5519971039698&text=Olá Fast Auto Socorro, gostaria de mais informações!" target="_blank" class="btn section-btn">Compre Agora</a>
+            </div>
+        </div>
+    </div>   
+    
+    <div class="services-section" id="servicos">
+        <h2 class="services">Nossos Serviços</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <h3>Socorro Mecânico</h3>
+                <p>Oferecemos assistência técnica para problemas mecânicos diretamente no local...</p>
+            </div>
+            <div class="service-item">
+                <h3>Serviço de Guincho</h3>
+                <p>Disponível 24 horas, nosso guincho está equipado para lidar com todos os tipos de veículos...</p>
+            </div>
+            <div class="service-item">
+                <h3>Abertura de Veículos</h3>
+                <p>Se você perder suas chaves ou deixá-las dentro do carro, não se preocupe...</p>
+            </div>
+            <div class="service-item">
+                <h3>Atendimento a Domicílio</h3>
+                <p>Nosso serviço abrange também inclui atendimento residencial para manutenções e montagens preventivas.</p>
+            </div>
+            <div class="service-item">
+                <h3>Venda de Baterias</h3>
+                <p>Fornecemos e instalamos baterias, assegurando partida e funcionamento adequados do seu veículo.</p>
+            </div>
+        </div>
+        <a href="https://api.whatsapp.com/send?phone=5519971039698&text=Olá Fast Auto Socorro, gostaria de mais informações!" target="_blank" class="service-btn">Consulte nossos serviços</a>
+    </div>
+    
+    <div>
+        <h1 id="somos-section">QUEM SOMOS</h1>
+        <p id="p-somos">Fundada em Campinas, a Fast Auto Socorro é sua parceira confiável para serviços automotivos de emergência. Especializamos em oferecer uma resposta rápida e eficaz para qualquer necessidade veicular, seja através do nosso serviço de guincho, socorro mecânico, venda de baterias ou atendimento a domicílio. Nossa equipe é composta por profissionais experientes e dedicados, prontos para garantir sua segurança e conforto na estrada, a qualquer hora do dia ou da noite.
+            <br><br>
+           Na Fast Auto Socorro, compreendemos que imprevistos na estrada podem acontecer a qualquer momento, e é por isso que estamos aqui para você. Com mais de uma década de experiência em assistência veicular, nossa missão é oferecer soluções eficientes e confiáveis para todos os tipos de problemas automotivos. Nossos serviços são projetados para minimizar seu tempo de parada e maximizar sua tranquilidade.
+        </p>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-left">
+            <img src="imagens/logo-footer.png" alt="Logo Fast Auto Socorro" class="footer-logo">
+            <button id="more-info-button" class="footer-button">Mais Informações</button>
+        </div>
+        <div class="footer-center">
+            <h3>Navegação</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#baterias">Baterias</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <h3>Contato</h3>
+            <ul>
+                <li>Telefone: (19)97103-9698</li>
+                <li>Email: fastautosocorro@gmail.com</li>
+                <li>Localização: R. Ambrógio Bisogni, 260 - Fazenda Santa Cândida, Campinas - SP, 13087-547</li>
+            </ul>
+        </div> 
+    </footer>
+
+    <div class="copyright">
+        © 2025 Fast Auto Socorro. Todos os direitos reservados
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        document.getElementById('more-info-button').addEventListener('click', function() {
+            window.open('https://api.whatsapp.com/send?phone=5519974142090&text=Olá Fast Auto Socorro, gostaria de mais informações!', '_blank'); // Substitua pela URL desejada
+        });
+        </script>
+</body>
+</html>
+  

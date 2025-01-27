@@ -1,0 +1,297 @@
+/* ===================== */
+/* PARA TELAS ATÉ 768PX  */
+/* ===================== */
+@media (max-width: 768px) {
+
+    /* Ajustes gerais de layout */
+    body, html {
+      overflow-x: hidden; /* já definido, mas reforçamos */
+    }
+  
+    /* Hero banner */
+    .hero-banner {
+      height: auto; /* Permite expandir conforme o conteúdo */
+      padding-left: 20px; /* Diminui o espaçamento */
+      justify-content: center; /* Centraliza o conteúdo */
+    }
+    
+    .content {
+      max-width: 100%; 
+      padding: 20px;
+    }
+    .logo {
+      max-width: 250px; /* Logo menor */
+      margin-bottom: 20px;
+    }
+    .buttons .btn {
+      width: 100%; 
+      margin: 10px 0; 
+      text-align: center; 
+    }
+  
+    /* Additional Section (Baterias) */
+    .additional-section .section-content {
+      flex-direction: column; /* Empilha imagem e texto */
+      padding: 60px 20px; 
+    }
+    .section-image {
+      max-width: 80%; 
+      margin: 0 auto 20px auto; /* Centraliza e adiciona espaço abaixo */
+    }
+    .text-content {
+      max-width: 100%;
+      padding: 0;
+    }
+    
+    /* Services Section */
+    .services-section {
+      padding: 40px 10px; 
+    }
+    .services-section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .services-grid {
+      grid-template-columns: 1fr; /* Passa para 1 coluna */
+      width: 80%; 
+    }
+    .service-item {
+      margin-bottom: 20px; /* Espaço entre cada cartão */
+    }
+    .service-btn {
+      width: 100%;
+    }
+  
+    /* Quem Somos */
+    #somos-section {
+      margin-top: 50px;
+      font-size: 1.8em;
+    }
+    #p-somos {
+      max-width: 90%; 
+      margin: 20px auto; 
+      font-size: 1.1em;
+    }
+  
+    /* Footer */
+    .site-footer {
+      flex-direction: column; /* Organiza em coluna */
+      align-items: center;
+      padding: 0 20px;
+      max-width: 100%; /* Usa toda a largura */
+    }
+    .footer-left, .footer-center, .footer-right {
+      width: 100%; /* Cada coluna ocupa toda a largura */
+      margin-top: 20px; 
+      padding: 0;
+      text-align: center; /* Centraliza o conteúdo de cada seção */
+    }
+    .footer-button {
+      margin-top: 10px;
+    }
+    .footer-logo {
+      max-width: 150px; 
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* ======================= */
+  /* PARA TELAS ATÉ 480PX    */
+  /* (CELULARES MENORES)     */
+  /* ======================= */
+  @media (max-width: 480px) {
+    * {
+      box-sizing: border-box;
+    }
+  
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden; /* Evitar rolagem horizontal */
+    }
+    
+    /* Hero banner */
+    .hero-banner {
+      padding: 20px;
+      margin: 0 auto; /* Centraliza se houver largura fixa (caso precise) */
+
+      /* Se for flex, já está usando justify-content: center ? 
+        Se não quiser ficar grudado nas laterais, mantenha ~ 20px de padding */
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+    }
+    .content {
+        /* Para garantir não estourar a tela */
+      max-width: 100%;
+      width: 100%;
+      margin: 0 auto;
+      /* Se quiser texto centralizado */
+      text-align: center;
+    }
+    .logo {
+      max-width: 180px; 
+    }
+    h1 {
+      font-size: 1.8em; 
+    }
+    p {
+      font-size: 1em; 
+      margin-bottom: 30px;
+    }
+    .buttons .btn {
+      display: block;        /* Para ocupar a largura total e centralizar corretamente */
+      width: 100%;           /* Cada botão em linha cheia */
+      margin: 10px auto;     /* Espaço vertical e centralização */
+      box-sizing: border-box; /* Força o box-sizing interno */
+      text-align: center;    /* Centraliza o texto dentro do botão */
+    }
+  
+    /* Additional Section (Baterias) */
+    .additional-section .section-content {
+      padding: 40px 20px;
+      margin: 0 auto; 
+      max-width: 100%;
+    }
+    .section-image {
+      display: block;
+      /* Aumente o max-width para exibir maior na tela */
+      max-width: 100%; 
+      width: auto;       /* Garante que a imagem respeite a proporção */
+      height: auto;      /* Mantém a altura proporcional */
+      margin: 20px auto; /* Centraliza e dá espaço entre elementos */
+    }
+    .section-btn {
+      font-size: 1em;
+      padding: 12px 20px;
+      display: block;
+      margin: 20px auto; /* Centraliza e dá espaçamento */
+      text-align: center;
+    }
+    
+    /* Services Section */
+    .services-section {
+      padding: 20px 10px;
+      text-align: center;
+    }
+    .services-section h2 {
+      font-size: 1.8em;
+      padding: 10px;
+    }
+    .services-grid {
+       /* Deixe width: 100% e padding interno, em vez de margin lateral que pode somar */
+      width: 100%;
+      max-width: 700px; /* Se quiser limitar a largura em tablets, por exemplo */
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+    .service-item {
+      padding: 15px;
+      text-align: center;
+    }
+    .service-item h3 {
+      font-size: 1.3em;
+    }
+    .service-item p {
+      font-size: 0.9em;
+    }
+    .service-btn{
+      font-size: 1em;
+      padding: 12px 20px;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
+  
+    /* Quem Somos */
+    #somos-section {
+      font-size: 1.5em;
+    }
+    #p-somos {
+      padding: 15px;
+      font-size: 1em;
+    }
+  
+    /* Footer */
+    .footer-left, .footer-center, .footer-right {
+      margin-top: 15px;
+    }
+    .footer-logo {
+      max-width: 120px;
+      display: block;
+      margin: 0 auto;
+    }
+    .footer-button {
+      font-size: 0.9em;
+      padding: 10px 15px;
+      margin-top: 10px;
+    }
+  
+  }
+  
+  /* ======================= */
+  /* PARA TELAS ATÉ 375PX    */
+  /* (CELULARES MENORES AINDA) */
+  /* ======================= */
+  @media (max-width: 350px) {
+  
+    /* Ajustes finais para telas bem pequenas */
+  
+    .logo {
+      max-width: 150px;
+    }
+    
+    h1 {
+      font-size: 1.6em;
+    }
+  
+    p {
+      font-size: 0.95em;
+    }
+  
+    .buttons .btn {
+      display: block;       /* forçar um botão por linha */
+      width: 100%;          /* opcional, se quiser ocupar toda a largura */
+      margin-bottom: 10px;  /* espaçamento entre botões */
+      font-size: 0.8em; 
+      padding: 8px;
+    }
+  
+    .section-image {
+      max-width: 85%;
+    }
+  
+    .section-btn {
+      font-size: 0.8em;
+      padding: 8px 10px;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
+  
+    .services-section h2 {
+      font-size: 1.6em;
+      padding: 10px 0;
+    }
+  
+    .service-item p {
+      font-size: 0.85em;
+    }
+  
+    #p-somos {
+      font-size: 0.95em;
+      margin-bottom: 100px; /* Ajuste para não ficar tão longo */
+    }
+  
+    .footer-button {
+      font-size: 0.8em;
+      padding: 8px 10px;
+    }
+  
+    .footer-logo {
+      max-width: 100px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  
